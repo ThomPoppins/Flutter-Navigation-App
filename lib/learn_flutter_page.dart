@@ -28,6 +28,14 @@ class _LearnFlutterPageState extends State<LearnFlutterPage> {
             Navigator.of(context).pop();
           },
         ),
+        actions: [
+          IconButton(
+            onPressed: () {
+              debugPrint("Actions");
+            },
+            icon: Icon(Icons.info_sharp),
+          ),
+        ],
       ),
       body: SingleChildScrollView(
         child: Column(
