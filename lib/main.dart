@@ -57,7 +57,10 @@ class _RootPageState extends State<RootPage> {
       ),
       // Add button floating on the body
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          debugPrint("Add button pressed");
+        },
+        child: const Icon(Icons.add),
       ),
     );
   }
