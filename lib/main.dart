@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_navigation_app/home_page.dart';
+import 'package:flutter_navigation_app/profile_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -46,7 +47,13 @@ class RootPage extends StatefulWidget {
 
 // Root application page state
 class _RootPageState extends State<RootPage> {
+  // Create a variable to store the current page index
   int currentPage = 0;
+  // Create a list of pages
+  List<Widget> pages = const [
+    HomePage(),
+    ProfilePage(),
+  ];
 
   // Build method for the state
   @override
@@ -58,7 +65,7 @@ class _RootPageState extends State<RootPage> {
         // AppBar title
         title: const Text("Thom's Flutter App"),
       ),
-      body: const HomePage(),
+      body: pages[currentPage],
       // Add button floating on the body
       floatingActionButton: FloatingActionButton(
         onPressed: () {
