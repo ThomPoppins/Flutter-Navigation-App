@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class LearnFlutterPage extends StatefulWidget {
-  const LearnFlutterPage({super.key});
+class GalaxiesPage extends StatefulWidget {
+  const GalaxiesPage({super.key});
 
   @override
-  State<LearnFlutterPage> createState() => _LearnFlutterPageState();
+  State<GalaxiesPage> createState() => _GalaxiesPageState();
 }
 
-class _LearnFlutterPageState extends State<LearnFlutterPage> {
+class _GalaxiesPageState extends State<GalaxiesPage> {
   // Create a boolean variable to store the switch state
   bool isSwitch = false;
   bool? isCheckbox = false;

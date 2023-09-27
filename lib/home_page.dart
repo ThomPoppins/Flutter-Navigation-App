@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_navigation_app/learn_flutter_page.dart';
+import 'package:flutter_navigation_app/galaxies_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
         onPressed: () {
           Navigator.of(context).push(
             MaterialPageRoute(
-              builder: (BuildContext context) => const LearnFlutterPage(),
+              builder: (BuildContext context) => const GalaxiesPage(),
             ),
           );
         },
